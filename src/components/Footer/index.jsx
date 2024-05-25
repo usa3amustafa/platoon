@@ -6,7 +6,13 @@ const Footer = () => {
   return (
     <footer id="footer">
       <div className="video-container">
-        <video autoPlay={true} loop={true} muted={true}>
+        <video
+          autoPlay={true}
+          loop={true}
+          muted={true}
+          width="100%"
+          playsInline={true}
+        >
           <source src={footerVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
