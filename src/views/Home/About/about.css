@@ -1,0 +1,19 @@
+#about {
+  padding: 4rem 0;
+}
+
+#about .about h2 {
+  font-size: 0.75rem;
+  margin: 0 0 0.25rem 0.25rem;
+}
+
+#about .about p {
+  font-size: 1.25rem;
+  line-height: 1.8;
+
+  color: #a82326;
+}
+
+#about .about p span {
+  font-size: 1.5rem;
+}

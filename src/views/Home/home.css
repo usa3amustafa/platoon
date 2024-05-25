@@ -1,0 +1,20 @@
+.catchy-title {
+  font-size: 1.25rem;
+  color: #280a0b;
+  text-align: center;
+
+  padding: 0 1rem 2rem 1rem;
+  line-height: 1.4;
+}
+
+.grid-2fr-3fr {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2rem;
+
+  padding: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
