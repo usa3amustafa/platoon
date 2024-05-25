@@ -44,10 +44,6 @@ const Home = () => {
 
       <Image imgType="portrait sm right-aligned mb-2" imgSrc={portrait5} />
 
-      {/* following images would be wrapped in a grid with 2fr 3fr and align items flex end */}
-      {/* img - type: portrait, xsm, left aligned, margin bottom */}
-      {/* img - type: portrait, sm, right aligned */}
-
       <Categories />
       <MoreProductsSlider />
       <Footer />

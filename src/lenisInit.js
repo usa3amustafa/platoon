@@ -1,14 +1,12 @@
-// src/lenisInit.js
-
 import Lenis from "@studio-freight/lenis"
 
 const lenis = new Lenis({
   duration: 1.2,
-  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // default easing
-  direction: "vertical", // vertical scrolling
-  gestureDirection: "vertical", // vertical gesture scrolling
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+  direction: "vertical",
+  gestureDirection: "vertical",
   smooth: true,
-  smoothTouch: false,
+  smoothTouch: true,
   touchMultiplier: 2,
   infinite: false,
 })

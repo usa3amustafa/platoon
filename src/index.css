@@ -33,7 +33,7 @@ img {
 
 body,
 html {
-  overflow: hidden;
+  overflow: auto;
 }
 
 body {
