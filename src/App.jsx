@@ -1,18 +1,9 @@
-import { useEffect } from "react"
-import AppRouter from "./AppRouter/AppRouter"
-import lenis from "./lenisInit"
+import AppRouterMain from "./AppRouter"
 
 const App = () => {
-  useEffect(() => {
-    lenis.start()
-    return () => {
-      lenis.stop()
-    }
-  }, [])
-
   return (
     <>
-      <AppRouter />
+      <AppRouterMain />
     </>
   )
 }

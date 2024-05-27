@@ -1,3 +1,15 @@
+@import "locomotive-scroll/dist/locomotive-scroll.css";
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+[data-scroll-container] {
+  min-height: 100vh;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,22 +20,20 @@ img {
   max-width: 100%;
 }
 
-.julius-sans {
-  font-family: "Julius Sans One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.junge {
-  font-family: "Junge", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .cutive-mono {
   font-family: "Cutive Mono", monospace;
   font-weight: 400;
   font-style: normal;
+}
+
+.garet-heavy {
+  font-family: "Garet", sans-serif;
+  font-weight: 700;
+}
+
+.garet-book {
+  font-family: "Garet", sans-serif;
+  font-weight: 400;
 }
 
 .container {
@@ -31,12 +41,7 @@ img {
   margin: 0 auto;
 }
 
-body,
-html {
-  overflow: auto;
-}
-
 body {
-  background-color: #fff8ed;
-  color: #280a0b;
+  background-color: #f5f2e9;
+  color: #000000;
 }

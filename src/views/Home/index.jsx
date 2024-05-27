@@ -1,7 +1,6 @@
-import Footer from "../../components/Footer"
 import Image from "../../components/Image"
 import MoreProductsSlider from "../../components/MoreProductsSlider"
-import Navbar from "../../components/Navbar"
+
 import About from "./About"
 import Categories from "./Categories"
 import Header from "./Header"
@@ -20,33 +19,47 @@ import "./home.css"
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Header />
       <About />
 
-      <Image imgType="landscape mb-2" imgSrc={landscape1} />
-      <Image imgType="portrait right-aligned sm mb-2" imgSrc={portrait1} />
-      <h2 className="catchy-title junge mb-2">
+      <Image imgType="landscape mb-2" imgSrc={landscape1} contained={false} />
+      <Image
+        imgType="portrait right-aligned sm mb-2"
+        imgSrc={portrait1}
+        contained={true}
+      />
+      <h2 className="catchy-title garet-book mb-2">
         “The PC-24 truly is a unicorn, there is no other aircraft which comes
         remotely close.”
       </h2>
-      <Image imgType="portrait left-aligned sm mb-2" imgSrc={portrait2} />
+      <Image
+        imgType="portrait left-aligned sm mb-2"
+        imgSrc={portrait2}
+        contained={true}
+      />
 
-      <Image imgType="portrait lg mb-2" imgSrc={portrait3} />
+      <Image imgType="portrait lg mb-2" imgSrc={portrait3} contained={true} />
 
       <div className="mb-2">
         <MoreProductsSlider />
       </div>
 
-      <Image imgType="landscape mb-2" imgSrc={landscape2} />
+      <Image imgType="landscape mb-2" imgSrc={landscape2} contained={false} />
 
-      <Image imgType="portrait sm left-aligned mb-2" imgSrc={portrait4} />
+      <Image
+        imgType="portrait sm left-aligned mb-2"
+        imgSrc={portrait4}
+        contained={true}
+      />
 
-      <Image imgType="portrait sm right-aligned mb-2" imgSrc={portrait5} />
+      <Image
+        imgType="portrait sm right-aligned mb-2"
+        imgSrc={portrait5}
+        contained={true}
+      />
 
       <Categories />
       <MoreProductsSlider />
-      <Footer />
     </>
   )
 }

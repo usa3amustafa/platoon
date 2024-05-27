@@ -1,0 +1,10 @@
+#product-page {
+  margin-top: 6rem;
+}
+
+#product-page .product-title {
+  font-size: 4rem;
+  line-height: 1;
+
+  margin: 2rem 0;
+}

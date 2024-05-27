@@ -6,6 +6,10 @@
   z-index: 1000000000;
 }
 
+#nav .nav-logo-img {
+  max-width: 10rem;
+}
+
 #nav .nav {
   display: flex;
   justify-content: space-between;

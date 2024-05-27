@@ -1,3 +1,4 @@
+import footerLogo from "../../assets/img/logo.svg"
 import footerVideo from "../../assets/vid/footer-mob.mp4"
 
 import "./footer.css"
@@ -55,7 +56,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bg">
-        <p className="julius-sans">PLATOON</p>
+        <img src={footerLogo} alt="" className="footer-logo" />
       </div>
     </footer>
   )

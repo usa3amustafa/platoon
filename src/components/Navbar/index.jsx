@@ -1,4 +1,6 @@
-import { CiMenuFries } from "react-icons/ci"
+import { IoMenu } from "react-icons/io5"
+
+import logo from "../../assets/img/logo.svg"
 
 import "./navbar.css"
 
@@ -7,11 +9,11 @@ const Navbar = () => {
     <nav id="nav">
       <div className="container nav">
         <div className="nav-logo">
-          <h2 className="julius-sans">PLATOON</h2>
+          <img src={logo} alt="" className="nav-logo-img" />
         </div>
 
         <div className="hamburger-icon">
-          <CiMenuFries size={30} />
+          <IoMenu size={24} />
         </div>
       </div>
     </nav>
