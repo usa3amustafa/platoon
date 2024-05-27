@@ -8,3 +8,45 @@
 
   margin: 2rem 0;
 }
+
+#product-page .product-info {
+  padding: 2rem 0 6rem 0;
+}
+
+#product-page .product-info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#product-page .product-info ul {
+  margin-bottom: 2rem;
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+#product-page .product-info ul li {
+  font-size: 0.9rem;
+}
+
+#product-page .product-info ul li + li {
+  margin-top: 1rem;
+}
+
+#product-page .product-info a {
+  text-decoration: none;
+  color: #f5f2e9;
+}
+
+#product-page .product-info a button {
+  font-size: 1rem;
+  display: block;
+  color: #f5f2e9;
+
+  background-color: #000000;
+
+  padding: 0.75rem 2rem;
+  border: none;
+  outline: none;
+
+  border-radius: 2px;
+}
