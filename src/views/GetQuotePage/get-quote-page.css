@@ -1,0 +1,111 @@
+#get-quote-page {
+  margin-top: 5rem;
+}
+
+#get-quote-page img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+#get-quote-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#get-quote-page .contact-form {
+  margin-bottom: 2rem;
+}
+
+#get-quote-page .contact-form div {
+  margin-bottom: 0.75rem;
+}
+
+#get-quote-page .contact-form input {
+  width: 100%;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 0.5rem;
+  font-family: "Garet", sans-serif;
+  background-color: #f5f2e9;
+}
+
+#get-quote-page .contact-form .error {
+  padding: 0 0.25rem 0.25rem 0.25rem;
+  font-family: "Garet", sans-serif;
+  font-size: 0.75rem;
+  color: #dd0000;
+}
+
+#get-quote-page .contact-form button {
+  font-size: 1rem;
+  display: block;
+  color: #f5f2e9;
+  background-color: #000000;
+  width: 10rem;
+  height: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+
+#get-quote-page .contact-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#get-quote-page .contact-form .loading-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 100;
+}
+
+.popup-content {
+  background-color: #f5f2e9;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  color: #f5f2e9;
+  background-color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}

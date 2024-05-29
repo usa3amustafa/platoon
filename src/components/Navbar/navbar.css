@@ -13,7 +13,80 @@
 #nav .nav {
   display: flex;
   justify-content: space-between;
+  padding: 1rem 0;
+}
+
+#nav .nav .nav-links {
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  list-style: none;
+  transition: left 0.5s ease;
+}
+
+#nav .nav .nav-links.active {
+  left: 0;
+}
+
+#nav .nav .close-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #f5f2e9;
+  z-index: 10000000000;
+}
+
+#nav .nav .nav-links li a {
+  text-decoration: none;
+  color: #f5f2e9;
+}
+
+/* Submenu styling */
+#nav .nav .nav-links .submenu {
+  position: fixed;
+  top: 0;
+  left: 1000px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.85));
+  color: #f5f2e9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 
-  padding: 1rem 0;
+  list-style: none;
+  transition: left 0.5s ease;
+  z-index: 1000000001; /* Ensure it appears above the navbar */
+}
+
+#nav .nav .nav-links .submenu .go-back {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+#nav .nav .nav-links .submenu.active {
+  left: 0%;
+}
+
+#nav .nav .nav-links .submenu li {
+  padding: 8px 16px;
+}
+
+#nav .hamburger-icon {
+  cursor: pointer;
+
+  z-index: 1000000002;
 }
